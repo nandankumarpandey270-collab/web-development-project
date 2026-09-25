@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandan Web Development</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #0b3b66;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #0b3b66;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #0b3b66;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #07508c;
+        }
+
+        .projects {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 260px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #0b3b66;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b3b66;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nandan Pandey</h1>
+        <p>Web Development Learning Portfolio</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to My Web Development Portfolio</h2>
+
+        <p>
+            I am learning web development and building projects
+            using HTML, CSS and JavaScript.
+        </p>
+
+        <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Hotel Management System</h3>
+                <p>
+                    A basic web project concept for managing
+                    hotel rooms, customers and bookings.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    Learning and practicing HTML, CSS and
+                    JavaScript through practical projects.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Future Projects</h3>
+                <p>
+                    More projects will be added as I continue
+                    learning web development.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nandan Pandey | Web Development Portfolio</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for visiting my portfolio!");
+        }
+    </script>
+
+</body>
+</html>
